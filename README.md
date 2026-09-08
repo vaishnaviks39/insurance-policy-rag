@@ -30,3 +30,6 @@ Create `backend/.env` with the required API keys.
 
 ```bash
 docker compose up --build
+```
+
+Open `http://localhost:8501`.
