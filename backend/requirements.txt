@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pdfplumber
+openai>=1.40.0
+numpy
+python-dotenv
+rank-bm25
+chromadb
+streamlit
+requests
+tiktoken
+langchain-text-splitters
+cohere
+langsmith
+deepeval

@@ -1,0 +1,218 @@
+[
+  {
+    "id": "fl_01",
+    "category": "factual_lookup",
+    "question": "What is the free look period for this policy?",
+    "metric": "Answer Relevancy",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because the response directly addresses the question about the free look period without any irrelevant statements."
+  },
+  {
+    "id": "fl_01",
+    "category": "factual_lookup",
+    "question": "What is the free look period for this policy?",
+    "metric": "Contextual Precision",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because the first node provides a clear and direct answer to the question about the free look period, stating that it is '15 days'. The subsequent nodes, ranked lower, discuss unrelated topics such as deductions, renewal discounts, and cancellation terms, which do not address the question. This clear distinction in relevance ensures that the relevant node is prioritized, leading to a perfect score."
+  },
+  {
+    "id": "fl_01",
+    "category": "factual_lookup",
+    "question": "What is the free look period for this policy?",
+    "metric": "Contextual Recall",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because the sentence perfectly matches the '15 days' timeframe specified in node 1 of the retrieval context, demonstrating a clear and direct connection."
+  },
+  {
+    "id": "nl_02",
+    "category": "numeric_limit",
+    "question": "What is the survival period requirement for Category I critical illnesses?",
+    "metric": "Answer Relevancy",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because the response directly addresses the question about the survival period requirement for Category I critical illnesses without any irrelevant statements."
+  },
+  {
+    "id": "nl_02",
+    "category": "numeric_limit",
+    "question": "What is the survival period requirement for Category I critical illnesses?",
+    "metric": "Contextual Precision",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because the first node provides a clear and direct answer regarding the survival period requirement for Category I critical illnesses, stating that it is 'more than 30 days post diagnosis'. The subsequent nodes, ranked lower, discuss irrelevant topics such as Category 2 requirements, exclusions, medical procedures, and claims procedures, which do not address the question at hand. This clear distinction in relevance justifies the perfect score."
+  },
+  {
+    "id": "nl_02",
+    "category": "numeric_limit",
+    "question": "What is the survival period requirement for Category I critical illnesses?",
+    "metric": "Contextual Recall",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because the sentence directly reflects the information from the first node in the retrieval context, confirming the requirement for survival beyond 30 days post diagnosis."
+  },
+  {
+    "id": "ex_01",
+    "category": "exclusion",
+    "question": "Is cosmetic surgery covered under this policy?",
+    "metric": "Answer Relevancy",
+    "score": 0.0,
+    "passed": false,
+    "reason": "The score is 0.00 because the output contains multiple irrelevant statements that directly contradict the question about cosmetic surgery coverage, such as stating it is not covered and discussing unrelated aspects like complications and specific types of surgery."
+  },
+  {
+    "id": "ex_01",
+    "category": "exclusion",
+    "question": "Is cosmetic surgery covered under this policy?",
+    "metric": "Contextual Precision",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because the first node directly addresses the question about cosmetic surgery coverage, stating that it is excluded under the policy. The subsequent nodes, ranked lower, do not provide relevant information regarding cosmetic surgery, with the second node stating, 'This document does not provide relevant information regarding cosmetic surgery or its coverage under the policy.' This clear distinction in relevance justifies the high score."
+  },
+  {
+    "id": "ex_01",
+    "category": "exclusion",
+    "question": "Is cosmetic surgery covered under this policy?",
+    "metric": "Contextual Recall",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because the sentence directly references 'cosmetic surgery or treatment,' which is explicitly mentioned in the retrieval context, ensuring a perfect match."
+  },
+  {
+    "id": "cd_01",
+    "category": "condition",
+    "question": "What happens to a claim if the insured dies within the survival period for their category?",
+    "metric": "Answer Relevancy",
+    "score": 0.5,
+    "passed": false,
+    "reason": "The score is 0.50 because the output included a statement about no claim being payable, which does not directly address the specific question regarding the implications of the insured's death within the survival period."
+  },
+  {
+    "id": "cd_01",
+    "category": "condition",
+    "question": "What happens to a claim if the insured dies within the survival period for their category?",
+    "metric": "Contextual Precision",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because all relevant nodes are ranked higher than the irrelevant nodes. The first three nodes provide direct answers regarding claims related to the survival period, stating that 'No Claim will be payable in the event of death of the insured within the stipulated survival period applicable under each category,' and specifying survival requirements for Categories I and II. In contrast, the fourth and fifth nodes discuss unrelated topics such as policy cancellation and definitions of critical illness, which do not address the question about claims, thus justifying their lower ranking."
+  },
+  {
+    "id": "cd_01",
+    "category": "condition",
+    "question": "What happens to a claim if the insured dies within the survival period for their category?",
+    "metric": "Contextual Recall",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because the sentence directly aligns with the first node in retrieval context, clearly stating the conditions under which a claim is not payable."
+  },
+  {
+    "id": "cdx_01",
+    "category": "category_distinction",
+    "question": "If an insured undergoes a kidney transplant, is the benefit paid under Kidney Failure or Major Organ Transplant?",
+    "metric": "Answer Relevancy",
+    "score": 0.5,
+    "passed": false,
+    "reason": "The score is 0.50 because the output included irrelevant information that did not address the specific question about benefit payments for a kidney transplant."
+  },
+  {
+    "id": "cdx_01",
+    "category": "category_distinction",
+    "question": "If an insured undergoes a kidney transplant, is the benefit paid under Kidney Failure or Major Organ Transplant?",
+    "metric": "Contextual Precision",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because the relevant node (first node) directly answers the question about benefit payment for kidney transplants, while all subsequent nodes are irrelevant as they do not provide pertinent information regarding the benefit payment for kidney transplants. The first node's clear and direct response ensures it is ranked highest, while the irrelevant nodes, which discuss unrelated topics, are ranked lower."
+  },
+  {
+    "id": "cdx_01",
+    "category": "category_distinction",
+    "question": "If an insured undergoes a kidney transplant, is the benefit paid under Kidney Failure or Major Organ Transplant?",
+    "metric": "Contextual Recall",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because the sentence directly references 'Major Organ Transplant (Category I)' and 'Kidney Failure Requiring Regular Dialysis', both of which are explicitly mentioned in the retrieval context, ensuring a perfect match."
+  },
+  {
+    "id": "ms_01",
+    "category": "multi_source",
+    "question": "If someone ports from another insurer with 2 years of continuous coverage, how does that affect waiting periods, and is there a separate liability cap for portability claims?",
+    "metric": "Answer Relevancy",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because the response directly addresses the question about portability and waiting periods without any irrelevant statements."
+  },
+  {
+    "id": "ms_01",
+    "category": "multi_source",
+    "question": "If someone ports from another insurer with 2 years of continuous coverage, how does that affect waiting periods, and is there a separate liability cap for portability claims?",
+    "metric": "Contextual Precision",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because all relevant nodes are ranked higher than the irrelevant nodes. The first node provides clear information that 'Waiting Periods as defined in exclusions shall be reduced by the number of years of continuous coverage under such health insurance policy with the previous insurer(s),' directly addressing the input question. The second node confirms a separate liability cap for portability claims by stating, 'The Company's total liability for payment of all claims in aggregate... shall not exceed Sum Insured Limit for Portability.' The irrelevant nodes, ranked lower, do not address the specifics of waiting periods or liability caps, focusing instead on unrelated policy terms."
+  },
+  {
+    "id": "ms_01",
+    "category": "multi_source",
+    "question": "If someone ports from another insurer with 2 years of continuous coverage, how does that affect waiting periods, and is there a separate liability cap for portability claims?",
+    "metric": "Contextual Recall",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because the expected output is fully supported by the information in node 1 of the retrieval context, which directly addresses both the reduction of waiting periods and the cap on total liability for portability claims."
+  },
+  {
+    "id": "oos_02",
+    "category": "out_of_scope",
+    "question": "What is today's USD to INR exchange rate?",
+    "metric": "Answer Relevancy",
+    "score": 0.0,
+    "passed": false,
+    "reason": "The score is 0.00 because the response fails to provide any relevant information regarding the USD to INR exchange rate, indicating a complete lack of content related to the question."
+  },
+  {
+    "id": "oos_02",
+    "category": "out_of_scope",
+    "question": "What is today's USD to INR exchange rate?",
+    "metric": "Contextual Precision",
+    "score": 0.0,
+    "passed": false,
+    "reason": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about the USD to INR exchange rate. Specifically, the first node ranks highest but states, \"The first document contains contact information but does not relate to currency exchange rates,\" indicating a complete lack of relevance. Similarly, the second node mentions, \"The second document is about an insurance company and does not provide any information on currency exchange rates,\" and this pattern continues through all nodes, which focus solely on insurance topics. As a result, there are no relevant nodes to elevate the score."
+  },
+  {
+    "id": "oos_02",
+    "category": "out_of_scope",
+    "question": "What is today's USD to INR exchange rate?",
+    "metric": "Contextual Recall",
+    "score": 0.0,
+    "passed": false,
+    "reason": "The score is 0.00 because the expected output states a lack of information, which is not supported by any node in the retrieval context."
+  },
+  {
+    "id": "pr_02",
+    "category": "paraphrase_robustness",
+    "question": "After being diagnosed with a Category I critical illness, how long do I need to survive for the benefit to be paid?",
+    "metric": "Answer Relevancy",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because the response directly addressed the question about the survival period required for benefit payment without any irrelevant statements."
+  },
+  {
+    "id": "pr_02",
+    "category": "paraphrase_robustness",
+    "question": "After being diagnosed with a Category I critical illness, how long do I need to survive for the benefit to be paid?",
+    "metric": "Contextual Precision",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because the relevant node ranks first and provides a clear answer regarding the survival period required for benefits under Category 1. The subsequent nodes, which are irrelevant, rank lower as they discuss unrelated categories or general policy terms, ensuring that the relevant information is prioritized."
+  },
+  {
+    "id": "pr_02",
+    "category": "paraphrase_robustness",
+    "question": "After being diagnosed with a Category I critical illness, how long do I need to survive for the benefit to be paid?",
+    "metric": "Contextual Recall",
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because the phrase 'more than 30 days' is directly referenced in the retrieval context under 'survival of the Insured Person for more than 30 days post diagnosis...' (1st node), perfectly aligning with the expected output."
+  }
+]
